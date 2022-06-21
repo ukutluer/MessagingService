@@ -14,6 +14,7 @@ namespace MessagingService.Extensions
                             {
                                 messageFrom = message.@from,
                                 messageTo = message.to,
+                                message = message.content,
                                 date = message.CreatedAt
                             };
             return response;
