@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"UserName\":\"test\",\r\n    \"Password\":\"1234\"\r\n}",
+							"raw": "{\r\n    \"UserName\":\"ugurkutluer\",\r\n    \"Password\":\"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,12 +23,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Users/Register",
-							"protocol": "https",
+							"raw": "http://localhost:8080/Users/Register",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
 								"Users",
 								"Register"
@@ -44,7 +44,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"UserName\":\"batuhanavlayan\",\r\n    \"Password\":\"1234\"\r\n}",
+							"raw": "{\r\n    \"UserName\":\"ugurkutluer\",\r\n    \"Password\":\"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -52,12 +52,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Users/Authenticate",
-							"protocol": "https",
+							"raw": "http://localhost:8080/Users/Authenticate",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
 								"Users",
 								"Authenticate"
@@ -90,12 +90,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Users",
-							"protocol": "https",
+							"raw": "http://localhost:8080/Users",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
 								"Users"
 							]
@@ -115,13 +115,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1NzU3MTU0LCJleHAiOjE2NTYzNjE5NTQsImlhdCI6MTY1NTc1NzE1NH0.itQJDhvAilcUz58AKxaRNib7cusqMgU3Ovfvyb5u9u8",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1ODQwMzc1LCJleHAiOjE2NTY0NDUxNzUsImlhdCI6MTY1NTg0MDM3NX0.9b4GLUkFZ63WIaWlDJUmsYTdQS3YDTv_oj5JS2RLSTE",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"to\":\"test\",\r\n    \"content\":\"from:ugurkutluer to:test ccc 1\"\r\n}",
+							"raw": "{\r\n    \"to\":\"test\",\r\n    \"content\":\"from:ugurkutluer to:test first 2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -129,12 +129,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Message/Send",
-							"protocol": "https",
+							"raw": "http://localhost:8080/Message/Send",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
 								"Message",
 								"Send"
@@ -153,7 +153,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1NzU3MTU0LCJleHAiOjE2NTYzNjE5NTQsImlhdCI6MTY1NTc1NzE1NH0.itQJDhvAilcUz58AKxaRNib7cusqMgU3Ovfvyb5u9u8",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1ODQyOTA5LCJleHAiOjE2NTY0NDc3MDksImlhdCI6MTY1NTg0MjkwOX0.Zjf45sZCbQaciXcE2EJ5Bupt_I1h2jwk7wxWFXCPwwk",
 								"type": "text"
 							}
 						],
@@ -167,12 +167,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Message/",
-							"protocol": "https",
+							"raw": "http://localhost:8080/Message/",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
 								"Message",
 								""
@@ -191,8 +191,8 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1NzU3MTU0LCJleHAiOjE2NTYzNjE5NTQsImlhdCI6MTY1NTc1NzE1NH0.itQJDhvAilcUz58AKxaRNib7cusqMgU3Ovfvyb5u9u8",
-								"type": "text"
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1ODQyOTA5LCJleHAiOjE2NTY0NDc3MDksImlhdCI6MTY1NTg0MjkwOX0.Zjf45sZCbQaciXcE2EJ5Bupt_I1h2jwk7wxWFXCPwwk"
 							}
 						],
 						"body": {
@@ -205,15 +205,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Message/",
-							"protocol": "https",
+							"raw": "http://localhost:8080/Message/test",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
 								"Message",
-								""
+								"test"
 							]
 						}
 					},
@@ -234,7 +234,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjYyYjBjY2ExNmIyZjI1M2VlZmU4NmY4YiIsIm5iZiI6MTY1NTc1MzkwNywiZXhwIjoxNjU2MzU4NzA3LCJpYXQiOjE2NTU3NTM5MDd9.t51UKRpYIRr5bnOsag8cByQ7ziPQN029AcxXhziNIE4",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVndXJrdXRsdWVyIiwibmJmIjoxNjU1ODQyOTA5LCJleHAiOjE2NTY0NDc3MDksImlhdCI6MTY1NTg0MjkwOX0.Zjf45sZCbQaciXcE2EJ5Bupt_I1h2jwk7wxWFXCPwwk",
 								"type": "text"
 							}
 						],
@@ -248,14 +248,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:44378/Users",
-							"protocol": "https",
+							"raw": "http://localhost:8080/UsersHistory",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "44378",
+							"port": "8080",
 							"path": [
-								"Users"
+								"UsersHistory"
 							]
 						}
 					},
