@@ -25,19 +25,16 @@ namespace MessagingService.API
                     config.ReadFrom.Configuration(context.Configuration);
                     config.WriteTo.MongoDBBson(cfg =>
                     {
-                        // custom MongoDb configuration
-                        var mongoDbSettings = new MongoClientSettings
+                        
+                        string connectionString = context.Configuration.GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.ConnectionStringValue).Value;
+                        var mobdbsetting = new MongoDbSettings
                         {
-                            UseTls = true,
-                            AllowInsecureTls = true,
-                            Credential = MongoCredential.CreateCredential(context.Configuration.GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.DatabaseValue).Value, string.Empty, string.Empty),
-                            Server = new MongoServerAddress("127.0.0.1")
-                        };
-
-                        var mongoDbInstance = new MongoClient(mongoDbSettings).GetDatabase(context.Configuration.GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.DatabaseValue).Value);
-
-                        // sink will use the IMongoDatabase instance provided
-                        cfg.SetMongoDatabase(mongoDbInstance);
+                            ConnectionString = connectionString,
+                            Database = context.Configuration.GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.DatabaseValue).Value,
+                        }; 
+                        var mongoClient = new MongoClient(mobdbsetting.ConnectionString);
+                        var db = mongoClient.GetDatabase(mobdbsetting.Database);
+                        cfg.SetMongoDatabase(db);
                         cfg.SetCollectionName("log");
                     });
                 })
