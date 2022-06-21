@@ -27,7 +27,20 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj"
+              },
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj"
+              },
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Extensions\\MessagingService.Extensions.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Extensions\\MessagingService.Extensions.csproj"
+              },
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Services\\MessagingService.Services.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Services\\MessagingService.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,6 +71,18 @@
               "target": "Package",
               "version": "[1.10.9, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.MongoDB": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -77,6 +102,334 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj",
+        "projectName": "MessagingService.Core.Entities",
+        "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj",
+        "packagesPath": "C:\\Users\\uur__\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\uur__\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.16.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.DataAccess\\MessagingService.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.DataAccess\\MessagingService.DataAccess.csproj",
+        "projectName": "MessagingService.DataAccess",
+        "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.DataAccess\\MessagingService.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\uur__\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\uur__\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj"
+              },
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.16.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj",
+        "projectName": "MessagingService.Entities",
+        "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj",
+        "packagesPath": "C:\\Users\\uur__\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\uur__\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Core.Entities\\MessagingService.Core.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Extensions\\MessagingService.Extensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Extensions\\MessagingService.Extensions.csproj",
+        "projectName": "MessagingService.Extensions",
+        "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Extensions\\MessagingService.Extensions.csproj",
+        "packagesPath": "C:\\Users\\uur__\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Extensions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\uur__\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Services\\MessagingService.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Services\\MessagingService.Services.csproj",
+        "projectName": "MessagingService.Services",
+        "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Services\\MessagingService.Services.csproj",
+        "packagesPath": "C:\\Users\\uur__\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\uur__\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.DataAccess\\MessagingService.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.DataAccess\\MessagingService.DataAccess.csproj"
+              },
+              "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj": {
+                "projectPath": "C:\\Users\\uur__\\source\\repos\\MessagingService\\MessagingService.API\\MessagingService.Entities\\MessagingService.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.19.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

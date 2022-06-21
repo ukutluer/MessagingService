@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService.API", "MessagingService.API\MessagingService.API.csproj", "{69513937-13D5-4700-9DB1-8F2BD2B561EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService.Core.Entities", "MessagingService.Core.Entities\MessagingService.Core.Entities.csproj", "{A86285BE-9091-4053-B40C-ABC860A8EF50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService.Entities", "MessagingService.Entities\MessagingService.Entities.csproj", "{776674B0-9BD5-491B-8931-C3BEAF4B2ED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService.Services", "MessagingService.Services\MessagingService.Services.csproj", "{2C81C44C-5DDA-44A4-AD8F-B32B78920F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService.DataAccess", "MessagingService.DataAccess\MessagingService.DataAccess.csproj", "{9E432F03-64FD-400D-8528-D50C22F0BB0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService.Extensions", "MessagingService.Extensions\MessagingService.Extensions.csproj", "{705BD893-1152-4BFA-804D-FD5E759A6C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{69513937-13D5-4700-9DB1-8F2BD2B561EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69513937-13D5-4700-9DB1-8F2BD2B561EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69513937-13D5-4700-9DB1-8F2BD2B561EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86285BE-9091-4053-B40C-ABC860A8EF50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86285BE-9091-4053-B40C-ABC860A8EF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86285BE-9091-4053-B40C-ABC860A8EF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86285BE-9091-4053-B40C-ABC860A8EF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776674B0-9BD5-491B-8931-C3BEAF4B2ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776674B0-9BD5-491B-8931-C3BEAF4B2ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776674B0-9BD5-491B-8931-C3BEAF4B2ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776674B0-9BD5-491B-8931-C3BEAF4B2ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C81C44C-5DDA-44A4-AD8F-B32B78920F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C81C44C-5DDA-44A4-AD8F-B32B78920F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C81C44C-5DDA-44A4-AD8F-B32B78920F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C81C44C-5DDA-44A4-AD8F-B32B78920F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E432F03-64FD-400D-8528-D50C22F0BB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E432F03-64FD-400D-8528-D50C22F0BB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E432F03-64FD-400D-8528-D50C22F0BB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E432F03-64FD-400D-8528-D50C22F0BB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705BD893-1152-4BFA-804D-FD5E759A6C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705BD893-1152-4BFA-804D-FD5E759A6C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705BD893-1152-4BFA-804D-FD5E759A6C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705BD893-1152-4BFA-804D-FD5E759A6C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
